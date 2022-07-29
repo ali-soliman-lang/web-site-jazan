@@ -5,9 +5,9 @@ function Properties() {
     <article className="article" id="properties">
       <h2 className="article_title">الخصائص الطبيعية</h2>
 
-      <div className="under_title d-flex justify-content-center align-items-center">
+      {/* <div className="under_title d-flex justify-content-center align-items-center">
         <i className="fa-solid fa-star"></i>
-      </div>
+      </div> */}
 
       <p className="article_subtitle">
         <span>

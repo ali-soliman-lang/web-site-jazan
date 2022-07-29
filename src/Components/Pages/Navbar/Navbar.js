@@ -28,7 +28,9 @@ const Navbar = () => {
           <div className="col-4 col-lg-6 col-xl-8">
             <ul className="itemsNavbar d-none d-xl-flex mb-0 justify-content-start">
               <li className="nav-item dropdown dropdown-one me-1 ">
-                <NavLink  to="/" className=" dropdown-toggle">الرئيسية</NavLink>
+                <NavLink to="/" className=" dropdown-toggle">
+                  الرئيسية
+                </NavLink>
               </li>
               <li className="nav-item dropdown dropdown-one me-1">
                 <NavLink to="/jazan_region" className=" dropdown-toggle">
@@ -120,12 +122,13 @@ const Navbar = () => {
                       arialabelledby="municipalities-tab"
                       tabIndex="0"
                     />
-                    <CentersTab  
+                    <CentersTab
                       classess={"tab-pane fade"}
                       id="centers-tab-pane"
                       role="tabpanel"
                       arialabelledby="centers-tab"
-                      tabIndex="0"/>
+                      tabIndex="0"
+                    />
                   </div>
                 </ul>
               </li>
@@ -166,37 +169,29 @@ const Navbar = () => {
                   المكتبة الاعلامية
                 </span>
                 <ul className="dropdown-menu dropdown-menu-two">
-                  <li className="dropdown dropend dropdown-three btn-group">
-                    <span className="dropdown-item dropend dropdown-toggle ">
-                      مكتبة الصور
+                  <li>
+                    <span className="dropdown-item">
+                      زيارة المرصد لأبو عريش
                     </span>
-                    <ul className="dropdown-menu  dropdown-menu-three">
-                      <li>
-                        <span className="dropdown-item">
-                          زيارة المرصد لأبو عريش
-                        </span>
-                      </li>
-                      <li>
-                        <span className="dropdown-item">
-                          زيارة المرصد لأبو عريش
-                        </span>
-                      </li>
-                      <li>
-                        <span className="dropdown-item">
-                          زيارة المرصد لأبو عريش
-                        </span>
-                      </li>
-                    </ul>
                   </li>
                   <li>
-                    <span className="dropdown-item">مكتبة الفيديو</span>
+                    <span className="dropdown-item">
+                      زيارة المرصد لأبو عريش
+                    </span>
+                  </li>
+                  <li>
+                    <span className="dropdown-item">
+                      زيارة المرصد لأبو عريش
+                    </span>
                   </li>
                 </ul>
               </li>
               <li className="me-1">التقارير</li>
               <li className="me-1">اخبار المرصد</li>
               <li className="me-1 last-item">
-                <NavLink to="/contactus" className="last">اتصل بنا </NavLink>
+                <NavLink to="/contactus" className="last">
+                  اتصل بنا{" "}
+                </NavLink>
               </li>
             </ul>
             <button

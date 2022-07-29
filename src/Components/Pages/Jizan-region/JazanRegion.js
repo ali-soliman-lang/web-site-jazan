@@ -49,7 +49,7 @@ const JazanRegion = () => {
     <Fragment>
       <div className="img-container">
         <div className="white-box">
-          {/* <Home /> */}
+          <JazanInformation />
           <div className="city-info">
             <div className="container">
               <div className="row">
@@ -114,7 +114,7 @@ const JazanRegion = () => {
             </div>
           </div>
           <DataTable />
-          <JazanInformation />
+          <Home />
         </div>
       </div>
     </Fragment>

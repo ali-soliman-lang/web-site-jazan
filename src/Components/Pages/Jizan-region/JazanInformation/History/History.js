@@ -5,9 +5,9 @@ function History() {
     <article className="article" id="history">
       <h2 className="article_title">المعالم التاريخية </h2>
 
-      <div className="under_title d-flex justify-content-center align-items-center">
+      {/* <div className="under_title d-flex justify-content-center align-items-center">
         <i className="fa-solid fa-star"></i>
-      </div>
+      </div> */}
 
       <div className="article_content d-flex flex-column gap-4">
         <p className="article_content-text">
