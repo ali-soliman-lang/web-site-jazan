@@ -24,7 +24,7 @@ const ContactUs = () => {
         "Content-type": "application/json",
       },
       body: JSON.stringify({
-        name: inputFirstName.current.value,
+        name: inputFirstName.current.value  +" "+ inputSecondName.current.value,
         email: inputEmail.current.value,
         phone: inputPhone.current.value,
         message: inputMessage.current.value,
@@ -36,6 +36,11 @@ const ContactUs = () => {
   const formHandler = (e) => {
     e.preventDefault();
     fetchDataForm();
+    inputFirstName.current.value = "";
+    inputSecondName.current.value = "";
+    inputPhone.current.value = "";
+    inputEmail.current.value = "";
+    inputMessage.current.value = "";
   };
   return (
     <Fragment>
@@ -71,6 +76,7 @@ const ContactUs = () => {
                               type="text"
                               className="form-control"
                               id="FirstName"
+                              required
                               ref={inputFirstName}
                             />
                             <label htmlFor="FirstName" className="form-label">
@@ -82,6 +88,7 @@ const ContactUs = () => {
                               type="text"
                               className="form-control"
                               id="LastName"
+                              required
                               ref={inputSecondName}
                             />
                             <label htmlFor="LastName" className="form-label">
@@ -102,6 +109,7 @@ const ContactUs = () => {
                             </label>
                             <input
                               type="email"
+                              required
                               className="form-control"
                               ref={inputEmail}
                             />
@@ -113,6 +121,7 @@ const ContactUs = () => {
                             </label>
                             <input
                               type="text"
+                              required
                               className="form-control"
                               ref={inputPhone}
                             />
@@ -128,6 +137,7 @@ const ContactUs = () => {
                           className="form-control"
                           rows="6"
                           cols="50"
+                          required
                           id="textarea-id"
                           placeholder="بحد اقصى 1000 حرف"
                           ref={inputMessage}
