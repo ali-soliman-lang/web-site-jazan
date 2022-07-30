@@ -12,31 +12,37 @@ const JazanSidebar = () => {
           </div>
           <div className="row">
             <div className="col-12 col-md-4">
-              <img
-                src={Jazanimgone}
-                alt="الملامح الاساسية"
-                className="img-fluid w-100 rounded  rounded-4 shadow img-jazan"
-              />
+              <a href="/jazan_region#features">
+                <img
+                  src={Jazanimgone}
+                  alt="الملامح الاساسية"
+                  className="img-fluid w-100 rounded  rounded-4 shadow img-jazan"
+                />
+              </a>
               <p className="mb-3 mt-3 fs-5 text-center text-jazan">
                 الملامح الاساسية
               </p>
             </div>
             <div className="col-12 col-md-4 ">
-              <img
-                src={Jazanimgtwo}
-                alt="الخصائص الطبيعية"
-                className="img-fluid w-100 rounded  rounded-4 shadow img-jazan"
-              />
+              <a href="/jazan_region#properties">
+                <img
+                  src={Jazanimgtwo}
+                  alt="الخصائص الطبيعية"
+                  className="img-fluid w-100 rounded  rounded-4 shadow img-jazan"
+                />
+              </a>
               <p className="mb-3 mt-3 fs-5 text-center text-jazan">
                 الخصائص الطبيعية
               </p>
             </div>
             <div className="col-12 col-md-4">
-              <img
-                src={Jazanimgthree}
-                alt="المعالم التاريخية"
-                className="img-fluid w-100 rounded rounded-4 shadow img-jazan"
-              />
+              <a href="/jazan_region#history">
+                <img
+                  src={Jazanimgthree}
+                  alt="المعالم التاريخية"
+                  className="img-fluid w-100 rounded rounded-4 shadow img-jazan"
+                />
+              </a>
               <p className="mb-3 mt-3 fs-5 text-center text-jazan">
                 المعالم التاريخية
               </p>

@@ -1,221 +1,203 @@
 .box {
-    position: absolute;
+  position: absolute;
 }
 
 .box .pins-img {
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .box .pins-img::before {
-    content: 'الدرب';
-    position: absolute;
-    top: 26%;
-    left: -123%;
-    background-color: #B20000;
-    color: #fff;
-    width: 47px;
-    height: 36px;
-    line-height: 36px;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: 600;
-    opacity: 0;
-    transition: all 0.3s ease;
+  content: "الدرب";
+  position: absolute;
+  top: 26%;
+  left: -123%;
+  background-color: #b20000;
+  color: #fff;
+  width: 47px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 .box:hover .pins-img::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .box .pins-img img {
-    width: 40px;
+  width: 40px;
 }
 
 .box .hanging-poles .bar-one,
 .box .hanging-poles .bar-two {
-    position: absolute;
-    height: 1px;
-    background-color: #fff;
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
+  position: absolute;
+  height: 1px;
+  background-color: #fff;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
 }
 
 .box .hanging-poles .bar-one {
-    width: 59px;
-    top: 0%;
-    left: 6%;
-    transform: rotate(-61deg);
+  width: 59px;
+  top: 0%;
+  left: 6%;
+  transform: rotate(-61deg);
 }
 
 .box .hanging-poles .bar-two {
-    top: -51%;
-    left: 116%;
-    width: 181px;
+  top: -51%;
+  left: 116%;
+  width: 181px;
 }
 
 .box:hover .hanging-poles .bar-one,
 .box:hover .hanging-poles .bar-two {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .box .data {
-    position: absolute;
-    top: -462%;
-    left: 130%;
-    width: 250px;
-    padding-bottom: 10px;
-    height: auto;
-    z-index: 9999;
-    background-color: #fff;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s ease;
+  position: absolute;
+  top: -462%;
+  left: 130%;
+  width: 250px;
+  padding-bottom: 10px;
+  height: auto;
+  z-index: 9999;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
 }
 
 .box:hover .data {
-    opacity: 0.9;
-    visibility: visible;
+  opacity: 0.9;
+  visibility: visible;
 }
 
 .box .data h6 {
-    background-color: #B20000;
-    color: #fff;
-    text-align: center;
-    padding: 6px 0;
-    font-size: 22px;
-    margin: 0;
+  background-color: #b20000;
+  color: #fff;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 22px;
+  margin: 0;
 }
 
 .box .data .box-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
-    margin: 5px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 5px 0;
 }
 
 .box .data .box-info p,
 .box .data .box-info span {
-    margin: 0;
-    padding: 0;
-    font-weight: 800;
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
 }
 
-
 .box .data .box-info .bar {
-    background: #b9b9b9;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    height: 5px;
-    width: 47%;
+  background: #b9b9b9;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: 5px;
+  width: 47%;
 }
 
 .box .data .box-info .bar .side {
-    height: 5px;
-    background-color: #616161 !important;
+  height: 5px;
+  background-color: #616161 !important;
 }
-
 
 /* location pins in map */
 
-.box.One {
-    top: 13%;
-    left: 18%;
-} 
-
-.box.Two {
-    top: 28%;
-    left: 28%;
+.box.box-1 {
+  top: 13%;
+  left: 18%;
 }
 
-.box.Three {
-    top: 40%;
-    left: 31%;
+.box.box-2 {
+  top: 28%;
+  left: 28%;
 }
 
-.box.Four {
-    top: 48%;
-    left: 35%;
+.box.box-3 {
+  top: 40%;
+  left: 31%;
 }
 
-.box.Five {
-    top: 60%;
-    left: 42%;
+.box.box-4 {
+  top: 48%;
+  left: 35%;
 }
 
-.box.Six {
-    top: 84%;
-    left: 55%;
+.box.box-5 {
+  top: 60%;
+  left: 42%;
 }
 
-.box.Seven {
-    top: 75%;
-    left: 82%;
+.box.box-6 {
+  top: 84%;
+  left: 55%;
 }
 
-.box.Eight {
-    top: 65%;
-    left: 81%;
+.box.box-7 {
+  top: 75%;
+  left: 82%;
 }
 
-.box.Nine {
-    top: 56%;
-    left: 78%;
+.box.box-8 {
+  top: 65%;
+  left: 81%;
 }
 
-.box.Ten {
-    top: 47%;
-    left: 90%;
+.box.box-9 {
+  top: 56%;
+  left: 78%;
 }
 
-.box.Eleven {
-    top: 28%;
-    left: 71%;
+.box.box-10 {
+  top: 47%;
+  left: 90%;
 }
 
-.box.Twelve {
-    top: 30%;
-    left: 60%;
+.box.box-11 {
+  top: 28%;
+  left: 71%;
 }
 
-.box.Thirteen {
-    top: 38%;
-    left: 63%;
+.box.box-12 {
+  top: 30%;
+  left: 60%;
 }
 
-.box.Fourteen {
-    top: 46%;
-    left: 55%;
+.box.box-13 {
+  top: 38%;
+  left: 63%;
 }
 
-.box.Fifteen {
-    top: 56%;
-    left: 55%;
+.box.box-14 {
+  top: 46%;
+  left: 55%;
 }
 
-.box.Sixteen {
-    top: 66%;
-    left: 55%;
+.box.box-15 {
+  top: 56%;
+  left: 55%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.box.box-16 {
+  top: 66%;
+  left: 55%;
+}

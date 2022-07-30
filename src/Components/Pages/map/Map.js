@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Pins from "./pins/Pins";
 import landOne from "../../../images/land-1.png";
 import landTwo from "../../../images/land-2.png";
 import "./Map.css";
 
 const Map = () => {
+  const [data, setData] = useState([]);
   let classes = [
     "One",
     "Two",
@@ -27,9 +28,7 @@ const Map = () => {
   useEffect(() => {
     fetch("https://marsad.almofawter.net/api/MapCities")
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data.data);
-      });
+      .then((data) => {});
   }, []);
 
   return (
@@ -38,8 +37,8 @@ const Map = () => {
         <div className="land">
           <img src={landOne} alt="land one" className="one" />
           <img src={landTwo} alt="land two" className="two" />
-          {classes.map((classItem, index) => (
-            <Pins key={index} classes={classItem} />
+          {data.map((item, index) => (
+            <Pins key={index} item={item} />
           ))}
         </div>
       </div>
